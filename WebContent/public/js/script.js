@@ -162,7 +162,7 @@ function registrar(){
 	    }
 	    
 	    console.log(configs.body);
-	    fetch('http://localhost:3040/Google_Calendar/regista', configs)
+	    fetch('http://google-calendar-loryana-ruiz.herokuapp.com/regista', configs)
 	        .then(res => res.json())
 	        .then(data => {console.log(data)
 	        	let userData = data.userData;

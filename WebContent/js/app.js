@@ -17,7 +17,7 @@ function login(){
                 'Content-type': 'application/json'
             }
     }
-    fetch('./Log', configs)
+    fetch('https://google-calendar-loryana-ruiz.herokuapp.com/Log', configs)
         .then(res => res.json())
         .then(data => {console.log(data)
         	let userData = data.userData;
@@ -54,7 +54,7 @@ function registrar(){
 	    }
 	    
 	    console.log(configs.body);
-	    fetch('./Regist', configs)
+	    fetch('http://google-calendar-loryana-ruiz.herokuapp.com/Regist', configs)
 	        .then(res => res.json())
 	        .then(data => {console.log(data)
 	        	let userData = data.userData;

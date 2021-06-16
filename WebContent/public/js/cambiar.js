@@ -20,12 +20,12 @@ function cambiar(){
 	    }
     }
 
-    fetch('http://localhost:3040/Google_Calendar/Usuario', datos)
+    fetch('http:/google-calendar-loryana-ruiz.herokuapp.com/Usuario', datos)
     .then( res => res.json())
     .then( data => {console.log(data)
     let userData = data.userData;
         if(data.status == 200){
-            window.open('http://localhost:3040/Google_Calendar/public/perfil.html', "_self");
+            window.open('http:/google-calendar-loryana-ruiz.herokuapp.com/public/perfil.html', "_self");
             alert(data.message);
         }else{
            
