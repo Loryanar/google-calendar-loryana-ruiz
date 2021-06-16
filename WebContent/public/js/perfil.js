@@ -8,7 +8,7 @@ var data = {
         body: fd 
     };
 
-    fetch('http://google-calendar-loryana-ruiz.herokuapp.com/Usuario', data)
+    fetch('https://google-calendar-loryana-ruiz.herokuapp.com/Usuario', data)
     .then( res => res.json())
     .then( data => {
         if(help == 0){

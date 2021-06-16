@@ -23,13 +23,13 @@ function registrar(){
 	    }
 	    
 	    console.log(configs.body);
-	    fetch('http://google-calendar-loryana-ruiz.herokuapp.com/', configs)
+	    fetch('https://google-calendar-loryana-ruiz.herokuapp.com/', configs)
 	        .then(res => res.json())
 	        .then(data => {console.log(data)
 	        	let userData = data.userData;
 	            if(data.status == 200){
 	            	alert("todo bien registro con exito");
-document.location.replace(`http://localhost:3040/Google_Calendar/public/calen.html`)
+document.location.replace(`https://google-calendar-loryana-ruiz.herokuapp.com/public/calen.html`)
 	            }
 	            	else{
 	            		console.log("jaja kloko no");

@@ -23,7 +23,7 @@ function login(){
         	let userData = data.userData;
             if(data.status == 200){
             	alert("todo bien login con exito");
-            	document.location.replace(`http://localhost:9092/Google_Calendar/public/perfil.html`)
+            	document.location.replace(`https://google-calendar-loryana-ruiz.herokuapp.com/public/perfil.html`)
                 //localStorage.setItem('sesion', JSON.stringify(userData));
                 localStorage.setItem('id', userData.id_usurio)
             }
@@ -54,13 +54,13 @@ function registrar(){
 	    }
 	    
 	    console.log(configs.body);
-	    fetch('http://google-calendar-loryana-ruiz.herokuapp.com/Regist', configs)
+	    fetch('https://google-calendar-loryana-ruiz.herokuapp.com/Regist', configs)
 	        .then(res => res.json())
 	        .then(data => {console.log(data)
 	        	let userData = data.userData;
 	            if(data.status == 200){
 	            	alert("todo bien registro con exito");
-document.location.replace(`http://localhost:9093/Google_Calendar/public/perfil.html`)
+document.location.replace(`https://google-calendar-loryana-ruiz.herokuapp.com/public/perfil.html`)
 	            }
 	            	else{
 	            		console.log("jaja kloko no");
