@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Delete Profile</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+<section class="perfil-usuario">
+    <div class="contenedor-perfil">
+        <div class="portada-perfil">
+            <div class="sombra"></div>
+            <div class="avatar-perfil">
+                <img src="" alt="img">
+               
+            </div>
+            <div class="datos-perfil">
+                <h1 id="nameus"></h1>
+                <p class="desc"></p>
+ 
+            </div>
+        </div>
+         <div class="menu-perfil">
+            <ul>
+                <li><a href="http://localhost:9092/Google_Calendar/public/perfil.html" title=""> Informacion</a></li>
+                <li><a href="http://localhost:9092/Google_Calendar/public/borrar.html" title="">Eliminar Usuario</a></li>
+                <li><a href="http://localhost:9092/Google_Calendar/public/cambiar.html" title=""> Cambiar Informacion </a></li>
+                <li><a href="http://localhost:9092/Google_Calendar/public/calen.html" title=""> Crear Calendarios</a></li>
+                <li><a href="http://localhost:9092/Google_Calendar/public/calendar.html" title=""> Calendarios</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+ <div class="cen">
+<div class="form-conten">
+ <div class="input-group">
+              <input type="submit" class="form-input" value="IR AL CALENDARIO">
+             
+          </div>
+</div>
+<div class="form-content">
+
+
+         
+       <form id="form"> 
+        <h2 id="h1">Informacion</h2>
+            <div class="input-group">
+                <input type="number" class="form-input" id="cedula">
+                
+            </div>
+
+            <div class="input-group">
+                <input type="text" class="form-input" id="nombre">
+                
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-input" id="apellido">
+                
+            </div>
+
+            <div class="input-group">
+                <input type="email" class="form-input" id="email">
+                
+            </div>
+            <div class="input-group">
+              <input type="submit" id="delete" class="form-input" value="Eliminar Usuario">
+             
+          </div>
+        </form>
+      
+    </div>
+   </div>
+   <script src="js/delete.js"></script>
+    <script src="js/perfil.js"></script>
+</body>
+
+</html>
