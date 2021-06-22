@@ -18,7 +18,7 @@ public class BDConexion extends LeerProperties{
 		  try{
 			this.con = null;		
 		    Class.forName ("org.postgresql.Driver");
-		    this.con = DriverManager.getConnection("jdbc:postgresql://ec2-23-23-128-222.compute-1.amazonaws.com:5432/d7qnbefthrjlcv", "apohtjhfajodsn", "8434bc7e57d4f76fb5c0c3a0f893063aee359c1a413001bd73e4d8a13e4e0ba4");
+		    this.con = DriverManager.getConnection("jdbc:postgresql://ec2-34-193-112-164.compute-1.amazonaws.com:5432/d3bo78amkppgd3", "bkgoqzumtylugo", "69bb62abcafbcd79ed0dba4c400b3d72505de84e826f7f1b71cf44e2d6ebeb5f");
 		    //this.con = DriverManager.getConnection (leer.getProperty("url"), leer.getProperty("user"), leer.getProperty("password"));   
 		  } 
 		  catch (Exception e) {
