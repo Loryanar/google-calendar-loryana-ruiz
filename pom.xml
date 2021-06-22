@@ -4,6 +4,7 @@
   <artifactId>Google_Calendar</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+   <name>Google_Calendar</name>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -11,16 +12,26 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-         <source>1.8</source>
+<source>1.8</source>
           <target>1.8</target>
-          <release>12</release>
         </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.2.3</version>
         <configuration>
-         <artifactItems>
+          <warSourceDirectory>WebContent</warSourceDirectory>
+        </configuration>
+      </plugin>           
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <executions>
+              <execution>
+                  <phase>package</phase>
+                  <goals><goal>copy</goal></goals>
+                  <configuration>
+                      <artifactItems>
                           <artifactItem>
                               <groupId>com.heroku</groupId>
                               <artifactId>webapp-runner</artifactId>
@@ -28,9 +39,12 @@
                               <destFileName>webapp-runner.jar</destFileName>
                           </artifactItem>
                       </artifactItems>
-        </configuration>
+                  </configuration>
+              </execution>
+          </executions>
       </plugin>
     </plugins>
+    
   </build>
   <dependencies>
   	<dependency>
@@ -38,12 +52,6 @@
 		<artifactId>javax.servlet-api</artifactId>
 		<version>3.1.0</version>
 	</dependency>
-	<dependency>
-    <groupId>org.json</groupId>
-    <artifactId>json</artifactId>
-    <version>20210307</version>
-</dependency>
-	
 	<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
 <dependency>
     <groupId>org.postgresql</groupId>
